@@ -16,7 +16,7 @@ https://github.com/UltraCodeStudio/UC-Diabetes/releases/latest
 - Configurable intervals and values to change the feel
 - Screen and walking effects 
 - Insulin and sugar tablet items to increase and decrease blood sugar
-- Blood sugar monitor to check your level
+- Blood sugar monitor with a realistic handheld UI (live reading, gauge, history, mg/dL or mmol/L)
 - Type1 and Type2 Diabetes to further customize RP experience
 - Persistently stored in the database
 - Admin command to give players diabetes

@@ -19,6 +19,14 @@ server_scripts {
     '@oxmysql/lib/MySQL.lua',
 }
 
+ui_page 'html/index.html'
+
+files {
+    'html/index.html',
+    'html/style.css',
+    'html/script.js',
+}
+
 dependencies {
     'ox_lib',
 }

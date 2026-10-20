@@ -44,9 +44,8 @@ Config.items = {
     bloodSugarMonitor = {
         animation = {
             dict = "cellphone@",
-            clip = "cellphone_text_in",
-            duration = 1500,
-            flag = 16,
+            clip = "cellphone_text_read_base", -- looped while the monitor is open
+            flag = 49,
             prop = {
                 model = "prop_amb_phone",
                 bone = 28422,
@@ -55,6 +54,15 @@ Config.items = {
             }
         },
     },
+}
+
+Config.Monitor = {
+    unit = "mg/dL", -- 'mg/dL' | 'mmol/L'
+    targetLow = 70, -- reading (mg/dL) shown at Config.Effects.lowSugar.threshold
+    targetHigh = 180, -- reading (mg/dL) shown at Config.Effects.highSugar.threshold
+    testDuration = 5, -- countdown in seconds before the result is shown
+    historySize = 10, -- readings kept in the monitor's history (per session)
+    sound = { name = "Beep_Red", dict = "DLC_HEIST_HACKING_SNAKE_SOUNDS" }, -- played when the result shows
 }
 
 Config.Type1 = {

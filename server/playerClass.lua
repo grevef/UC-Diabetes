@@ -53,9 +53,7 @@ function Player:useEnergyTablet()
 end
 
 function Player:useBloodSugarMonitor()
-    TriggerClientEvent('UC-diabetes:client:playAnimation', self.source, Config.items.bloodSugarMonitor.animation)
-    TriggerClientEvent('UC-diabetes:client:playSound', self.source, "Beep_Red", "DLC_HEIST_HACKING_SNAKE_SOUNDS")
-    Notify(self.source, 'UC-Diabetes', 'Your current sugar level is ' .. tostring(self.sugarLevel) .. '%.', 'info')
+    TriggerClientEvent('UC-diabetes:client:openMonitor', self.source, self.sugarLevel, self.type)
 end
 
 function Player:getSugarDecreaseAmount()

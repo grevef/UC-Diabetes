@@ -20,7 +20,8 @@
         label = "Blood Sugar Monitor",
         description = "Used to monitor sugar levels.",
         weight = 20,
-        stack = true,
+        stack = false,
+        consume = 0,
         client = {
            event = 'UC-diabetes:client:useBloodSugarMonitor',
         }

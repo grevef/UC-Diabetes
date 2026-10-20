@@ -128,3 +128,9 @@ lib.callback.register('UC-diabetes:server:getDiabetesType', function(source)
     end
     return 'none'
 end)
+
+lib.callback.register('UC-diabetes:server:getSugarLevel', function(source)
+    if Players[source] then
+        return Players[source]:getSugarLevel()
+    end
+end)
